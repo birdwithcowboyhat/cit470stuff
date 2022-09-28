@@ -1,0 +1,55 @@
+#Root node
+
+dn: dc=cit470,dc=nku,dc=edu
+objectclass: organization
+objectclass: dcObject
+o: cit470.nku.edu
+dc: cit470
+
+# AcademicComputing branch node
+
+dn: ou=AcademicComputing, dc=cit470,dc=nku,dc=edu
+objectclass: organizationalUnit
+ou: AcademicComputing
+
+# Informatics branch node
+
+dn: ou=Informatics, dc=cit470,dc=nku,dc=edu
+objectclass: organizationalUnit
+ou: Informatics
+
+# LDAP Superuser node
+
+dn: cn=Manager, dc=cit470,dc=nku,dc=edu
+objectclass: organizationalRole
+cn: Manager
+
+#AcademicComputing leaf nodes
+
+dn: cn=To Fu, ou=AcademicComputing, dc=cit470,dc=nku,dc=edu
+objectclass: person
+cn: To Fu
+sn: Fu
+
+dn: cn=Fu Bar, ou=AcademicComputing, dc=cit470,dc=nku,dc=edu
+objectclass: person
+cn: Fu Bar
+sn: Bar
+
+#Informatics leaf nodes
+
+dn: cn=Peter Python, ou=Informatics, dc=cit470,dc=nku,dc=edu
+objectclass: person
+cn: Peter Python
+sn: Python
+
+dn: cn=Ann Anaconda, ou=informatics, dc=cit470, dc=nku, dc=edu
+objectclass: person
+cn: Ann Anaconda
+sn: Anaconda
+
+dn: cn=Valerie Viper, ou=Informatics, dc=cit470,dc=nku,dc=edu
+objectclass: person
+cn: Valerie Viper
+cn: Val Viper
+sn: Viper
